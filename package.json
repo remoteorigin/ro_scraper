@@ -1,0 +1,31 @@
+{
+  "name": "ro_scraper",
+  "version": "1.0.0",
+  "description": "ro_scraper",
+  "main": "wdio.conf.js",
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-register": "^6.24.1",
+    "webdriverio": "^4.8.0"
+  },
+  "devDependencies": {
+    "wdio-dot-reporter": "0.0.8",
+    "wdio-jasmine-framework": "^0.3.1",
+    "wdio-spec-reporter": "^0.1.0"
+  },
+  "scripts": {
+    "start-selenium": "docker run -d --name se-chrome-debug -p 5900:5900 -p 4444:4444 selenium/standalone-chrome-debug",
+    "stop-selenium":"docker rm -fv se-chrome-debug",
+    "test": "node_modules/.bin/wdio wdio.conf.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/remoteorigin/ro_scraper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/remoteorigin/ro_scraper/issues"
+  },
+  "homepage": "https://github.com/remoteorigin/ro_scraper#readme"
+}
