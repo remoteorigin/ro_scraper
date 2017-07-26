@@ -1,0 +1,13 @@
+
+npm-debug.log
+node_modules
+local-server
+yarn-error.log
+*.swp
+.sass-cache
+.tmp
+.idea
+.DS_Store
+shippable
+screenshots/
+config-custom.yaml# Created by .ignore support plugin (hsz.mobi)
