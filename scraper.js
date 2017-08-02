@@ -1,11 +1,11 @@
 
+const startUrl = 'https://www.google.com'
 
 
-
-describe('Waits for page to load', () => {
+describe('test', () => {
   it('test', () => {
 
-    browser.url("https://www.google.com");
+    browser.url(startUrl);
 
   });
 });
